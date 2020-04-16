@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion en C</title>
+    <link rel="shortcut icon" href="imagenes/iconoPagina.png" type="">
+    <link rel="stylesheet" href="css/hojaDeEstilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#contacto">Acerca de</a>
+         
+        </nav>
+        <section class="textos-portada" id="inicio">
+            <h1>Introduccion a la programacion</h1>
+            <h2>Lenguaje C</h2>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 337.70,146.53 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+    <main>
+        <section class="introduccion">
+            <h2 class="titulo">Introduccion al lenguaje</h2>
+            <div class="introduccion-parrafo">
+                <div class="contenido-parrafo">
+                    <h3>Que es</h3>
+                        <p style="line-height: 150%;">El lenguaje C es un lenguaje de programacion estructurado, en el mismo sentido que lo son otros
+                            lenguajes de programación tales como el lenguaje Pascal, el Ada o el Modula-2, pero
+                            no es estructurado por bloques, o sea, no es posible declarar subrutinas (pequeños
+                            trozos de programa) dentro de otras subrutinas, a diferencia de como sucede con otros
+                            lenguajes estructurados tales como el Pascal. 
+                        </p> 
+          
+                        <p style="line-height: 150%;">Este lenguaje fue creado por Brian Kernighan y Dennis
+                            Ritchie a mediados de los años 70. La primera implementación del mismo la realizó
+                            Dennis Ritchie sobre un computador DEC PDP-11 con sistema operativo UNIX. C es
+                            el resultado de un proceso de desarrollo que comenzó con un lenguaje anterior, el
+                            BCPL, el cual influyó en el desarrollo por parte de Ken Thompson de un lenguaje
+                            llamado B, el cual es el antecedente directo del lenguaje C.  El lenguaje C es un
+                            lenguaje para programadores en el sentido de que proporciona una gran flexibilidad de
+                            programación y una muy baja comprobación de incorrecciones, de forma que el
+                            lenguaje deja bajo la responsabilidad del programador acciones que otros lenguajes
+                            realizan por si mismos. Así, por ejemplo, C no comprueba que el índice de referencia
+                            de un vector (llamado array en la literatura informática) no sobrepase el tamaño del
+                            mismo; que no se escriba en zonas de memoria que no pertenecen al área de datos del
+                            programa, etc.
+                        </p>
+                        <p style="line-height: 150%;">Desde su creación, surgieron distintas versiones de C, que incluían unas u otras
+                            características, palabras reservadas, etc. Este hecho provoco la necesidad de unificar el
+                            lenguaje C, y es por ello que surgió un standard de C, llamado ANSI-C, que declara
+                            una serie de características, etc., que debe cumplir todo lenguaje C. 
+                        </p>
+                        <p style="line-height: 150%;">El standard ANSI-C contiene un total de 32 palabras reservadas, las cuales son: 
+                        </p>
+                        <table >
+                            <tr>
+                                <td>
+                                    auto
+                                </td>
+                                <td>
+                                    break
+                                </td>
+                                <td>
+                                    case
+                                </td>
+                                <td>
+                                    char
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    const
+                                </td>
+                                <td>
+                                    continue
+                                </td>
+                                <td>
+                                    default
+                                </td>
+                                <td>
+                                    do
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    double
+                                </td>
+                                <td>
+                                    else
+                                </td>
+                                <td>
+                                    enum
+                                </td>
+                                <td>
+                                    extern
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    float
+                                </td>
+                                <td>
+                                    for
+                                </td>
+                                <td>
+                                    goto
+                                </td>
+                                <td>
+                                    if
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    int
+                                </td>
+                                <td>
+                                    long
+                                </td>
+                                <td>
+                                    register
+                                </td>
+                                <td>
+                                    return
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    short
+                                </td>
+                                <td>
+                                    signed
+                                </td>
+                                <td>
+                                    sizeof
+                                </td>
+                                <td>
+                                    static
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    struct
+                                </td>
+                                <td>
+                                    switch
+                                </td>
+                                <td>
+                                    typedef
+                                </td>
+                                <td>
+                                    union
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    unsigned
+                                </td>
+                                <td>
+                                    void
+                                </td>
+                                <td>
+                                    volatile
+                                </td>
+                                <td>
+                                    while
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Este lenguaje es compilado por lo que se requiere de un programa que nos ayude con esta tarea para que 
+                            podamos compilar nuestro codigo y ejecutarlo por consola. Existen diversos editores de texto que nos ayudan
+                            a realizar esta tarea. Los mas populares son <a href="http://www.codeblocks.org/downloads">Code-Blocks</a>  y 
+                            <a href="https://sourceforge.net/projects/orwelldevcpp/">Dev-c++</a> mismos que puedes descargar e instalar de 
+                            forma gratuita desde su pagina de intenert. 
+                        </p>
+                    <h3>Primer programa "Hola Mundo"</h3>
+                    <p style="line-height: 150%;">Si ya cuentas con un IDE instalado ya puedes hacer tu primer programa en C. Para ello solo
+                    necesitas conocer las estructura de un programa basico. Observa el siguiente codigo que nos muestra un mensaje por consola 
+                    de "Hola mundo".
+                    </p>
+                    <p>#include < stdio . h> <br> <br>
+                        main() <br>
+                        { <br>
+                            &nbsp;&nbsp; printf("Hola mundo"); <br>
+                            &nbsp;&nbsp; return 0; <br> 
+                        } <br>
+                    </p>
+                    <p>Listo! Ya tienes tu primer programa hecho en lenguaje C</p>    
+                </div>
+            </div>
+        </section>
+
+        <section class="desarrollo">
+            <h2 class="titulo">Identificadores, tipos de datos y variables</h2>
+            <div class="desarrollo-parrafo">
+                <div class="contenido-desarrollo">
+                    <h3>Indentificadores</h3>
+                    <p style="line-height: 150%;"> Un indentificador es aquel nombre dado por el programador para declarar una
+                        variable y poder hacer uso de ella dentro de nuestro codigo. Recordando que C es un lenguaje sensible al contexto por 
+                        lo que distingue entre mayusculas y minusculas por lo que la misma palabra podria ser tomada como dos Indentificadores diferentes, por ejemplo:
+                        "nombre" y "NOMBRE" son dos Indentificadores.
+                    </p>
+                    <p>Las formas mas comunes de crear indentificadores son:</p>
+                    <p> <b> nombre_variable </b>(Separando dos palabras con un guion bajo)</p>
+                    <p> <b>nombreVariable</b> (Separando dos palabras empezando la segunda con mayuscula)</p>
+                    <p> <b>nombreVariable2</b> (Mismo nombre pero con numero)</p>
+                    <h3>Tipos de datos</h3>
+                    <p style="line-height: 150%;"> Al igual que en otros lenguajes de programacion, C tambien cuenta con diferentes tipos de datos 
+                        que son muy importantes ya que de estos depende que hagamos un correcto uso de las variables y desarrollo de codigo. Los tipos de datos son
+                        los que se muestran a continuacion:
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                int
+                            </td>
+                            <td>
+                                Enteros
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                float
+                            </td>
+                            <td>
+                                numeros reales
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                char
+                            </td>
+                            <td>
+                                caracter
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                char[ ]
+                            </td>
+                            <td>
+                                cadena de caracteres
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                void
+                            </td>
+                            <td>
+                                sin valor (uso especial)
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Variables</h3>
+                    <p>La sintaxis correcta para poder declarar una variable es la siguiente:</p>
+                    <p> <i>tipo_de_dato nombre_variable;</i></p>
+                    <p><b>Ejemplo</b></p>
+                    <p><i>int a;</i><br> <br> Con esto ya esta declarada una variable de tipo entero que resive como nombre "a".</p>
+                    <p>Incluso se le puede dar un valor inicial y nos quedaria de la siguiente manera:</p>
+                    <p><i>int a=0;</i> <br> <br>De esta manera tambien declaras la variable solo que le has dado un valor de inicio el cual puede cambiar
+                    o no dependiendo la utilizacion que se le de dento del codigo.</p>
+                    <p> <b>Codigo que imprime el valor de una variable</b> </p>
+                    <p>#include < stdio . h> <br> <br>
+                        int a=5; <br> <br>
+                        main() <br>
+                        { <br>
+                            &nbsp;&nbsp; printf("El valor de 'a' es: %d", a); <br>
+                            &nbsp;&nbsp; return 0; <br> 
+                        } <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-1.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-2.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-3.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-4.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-5.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-6.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-7.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagenes/coding-8.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagenes/coding-11.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>--> 
+       <!--<section class="cliente-contenedor">
+            <h2 class="titulo">Opiniones</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/arrows-1.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/arrows.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, enim.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <h2 class="titulo">Nuestros servicios</h2>
+            <div class="servicio-cont">
+                <div class="servico-ind">
+                    <img src="imagenes/laptop-1.png" alt="">
+                    <h3>name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias.</p>
+                </div>
+                <div class="servico-ind">
+                    <img src="imagenes/laptop-4.png" alt="">
+                    <h3>name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias.</p>
+                </div>
+                <div class="servico-ind">
+                    <img src="imagenes/laptop-5.png" alt="">
+                    <h3>name</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias.</p>
+                </div>
+            </div>
+        </section>--> 
+    </main>
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <link rel="shortcut icon" href="imagenes/instagram.png" type="image/png">
+                <h4>Intagram</h4>
+                <p> <a href="https://www.instagram.com/_hectorivas_/">Perfil personal</a> </p>
+            </div>
+            <div class="content-foo">
+                <link rel="shortcut icon" href="imagenes/google.png" type="image/png">
+                <h4>Correo</h4>
+                <p>hector.rtejeda@alumnos.udg.mx</p>
+            </div>
+            <div class="content-foo">
+                <link rel="shortcut icon" href="imagenes/facebook.png" type="image/png">
+                <h4>Facebook</h4>
+                <p> <a href="https://www.facebook.com/profile.php?id=100005321114234">Perfil personal</a> </p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; HR | Hector Rivas</h2>
+        <h5 class="referencia">
+            Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> <br>
+            Iconos diseñados por: <a href="https://www.flaticon.es/autores/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> <br>
+            Imagen de <a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>
+
+        </h5>
+    </footer>
+</body>
+</html>
